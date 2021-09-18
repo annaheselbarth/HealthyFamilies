@@ -29,6 +29,7 @@ body {
     border-bottom: 1px solid grey;
     margin-bottom: 75px;
     box-shadow: 0px 3px 5px black;
+    display: inline-block;
 }
 /*Main Section*/
 #banner {
@@ -36,6 +37,47 @@ body {
     margin: 9px;
 
 }
+#story {
+    width: 750px;
+    float: left;
+    position: relative;
+    display: block;
+    background-color: white;
+    padding: 2.7em 1.5em 4.0em 2.7em;
+    margin: 4.5em 0 6.0em 3.5em;
+}
+#familypicture {
+    text-align: right;
+    
+}
 
 
 /*Footer*/
+footer {
+    background-color: grey;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+footer ul#menuFooter{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+}
