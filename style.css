@@ -67,20 +67,31 @@ section #main {
   }
   
   .row {
+    display: table;
+    width: 100%;
+  }
+  .flex-container {
     display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
   }
   
   /* Create three equal columns that sits next to each other */
   .column {
     flex: 33.33%;
     padding: 5px;
-  }
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
+}
+
+  
   
   /* Clear floats after image containers */
   .row::after {
@@ -93,6 +104,8 @@ section #main {
     position: relative;
     width: 100%;
     max-width: 400px;
+    float: left;
+    margin: 2em;
   }
   
   .container img {
@@ -139,6 +152,8 @@ form {
 footer {
     background-color: grey;
     height: 25px;
+
+    
     font-size: 1.2em;
     color: #fff;
     text-align: center;
